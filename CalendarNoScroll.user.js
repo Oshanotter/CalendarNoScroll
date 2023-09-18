@@ -3,7 +3,7 @@
 // @description Disables the scroll feature for Month view on Google Calendar.
 // @version 1.1.1
 // @icon https://repository-images.githubusercontent.com/690376338/77d3ac11-d2ce-4cd4-9203-c2d3941815b3
-// @updateURL https://github.com/Oshanotter/CalendarNoScroll/raw/main/CalendarNoScroll.js
+// @updateURL https://github.com/Oshanotter/CalendarNoScroll/raw/main/CalendarNoScroll.user.js
 // @namespace Oshanotter
 // @author Max Forst
 // @include https://calendar.google.com/*

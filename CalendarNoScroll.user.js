@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name CalendarNoScroll
 // @description Disables the scroll feature for Month view on Google Calendar.
-// @version 1.1.1
+// @version 1.1.2
 // @icon https://repository-images.githubusercontent.com/690376338/77d3ac11-d2ce-4cd4-9203-c2d3941815b3
 // @updateURL https://github.com/Oshanotter/CalendarNoScroll/raw/main/CalendarNoScroll.user.js
 // @namespace Oshanotter
@@ -63,10 +63,11 @@ function main_CalendarNoScroll(){
 
 
     // find the buttons and add 'click' event listeners to them
-    var prevMonth = document.querySelector("button.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc.A7iFUc.m2yD4b.JJyfjc")
-
-    var nextMonth = document.querySelector("button.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc.xEq6pc.m2yD4b.JJyfjc")
-
+    var bothButtons = document.querySelectorAll("button.JJyfjc");
+    var prevMonth = bothButtons[0];
+    
+    var nextMonth = bothButtons[1];
+    
     prevMonth.addEventListener("click", arrowClick);
 
     nextMonth.addEventListener("click", arrowClick);
